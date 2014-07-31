@@ -1,0 +1,391 @@
+/**
+ * @fileOverview  界面样式
+ * @author xhong
+ */
+
+/* Common Styles  */
+body {
+	background: #fff;
+	color: #555;
+	font: normal 15px "Roboto", arial, sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: #b2daeb;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #b2daeb;
+	color: #fff;
+}
+
+p {
+	color: #666;
+	line-height: 1.8em;
+	margin: 0 0 20px;
+}
+
+strong {
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #555;
+	font-style: normal;
+	font-weight: 100;
+	line-height: 1.17em;
+	margin: 0 0 20px;
+}
+
+h1 {
+	font-size: 3.5em;
+	margin-top: 80px;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: 300;
+}
+
+h6 {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+a {
+	color: #3498d9;
+	cursor: pointer;
+	text-decoration: none;
+	-moz-transition:color .2s;
+	-o-transition:color .2s;
+	-webkit-transition:color .2s;
+	transition:color .2s;
+}
+
+a:hover {
+	color: #555;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+
+.clearfix {
+	*zoom:1;
+}
+
+.container {
+	width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+section, header{
+	border-bottom: 1px solid #ececec;
+}
+section{
+	margin-top: 40px;
+}
+.wrapper{
+	margin-top: 80px;
+}
+
+.go {
+	background: url(../images/icons/go.png) no-repeat top center;
+}
+.go_small {
+	background: url(../images/icons/go-small.png) no-repeat top center;
+}
+.go_top {
+	background: url(../images/icons/top.png) no-repeat top center;
+}
+.prev {
+	background: url(../images/slider/prev.png) no-repeat top center;
+}
+.next {
+	background: url(../images/slider/next.png) no-repeat top center;
+}
+a:hover i, .next:hover, .prev:hover, .pager li:hover{
+	background-position: bottom;
+}
+.pager li:active {
+	background-image: url(../images/slider/pager-active.png);
+}
+
+
+header, .show, .benefit, .beautiful_Graphs, .track, .screenshots, .subscribe, footer {
+	text-align: center;
+}
+
+.go{
+	display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+}
+
+.go_small, .go_top{
+	display: inline-block;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    margin-bottom: -4px;
+}
+.pager li {
+	display: inline-block;
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+    background: url(../images/slider/pager.png) no-repeat top center;
+}
+
+.beautiful_Graphs > p, .screenshots > p , .track > p{
+	margin: 0 auto;
+	width: 500px;
+}
+
+/* header style */
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	line-height: 80px;
+	height: 80px;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, .9);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	z-index: 9999;
+}
+.logo {
+	float: left;
+	_display: inline;
+	width: 160px;
+	margin: 0 10px;
+}
+.navbar ul{
+	float: right;
+}
+.navbar li {
+	float: left;
+	_display: inline;
+	margin-right: 40px;
+}
+.navbar a {
+	color: #aeaeae;
+}
+.navbar a:hover {
+	color: #3498d9;
+}
+
+/* Show style */
+.show {
+	position: relative;
+	background: url(../images/hero-hardware.jpg) no-repeat top right;
+	height: 490px;
+}
+.show h3{
+	position: absolute;
+	bottom: 0;
+	line-height: 100px;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 0;
+	background: rgb(255, 255, 255);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,.8) 0%, rgba(255,255,255,1) 45%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,.8) 0%, rgba(255,255,255,1) 45%);
+	background: linear-gradient(top, rgba(255,255,255,.8) 0%, rgba(255,255,255,1) 45%);
+}
+/* benefit style */
+.benefit > p {
+	margin: 0 auto;
+	width: 700px;
+}
+.benefit div {
+	margin: 40px 10px 0 10px;
+	float: left;
+	_display: inline;
+	width: 300px;
+}
+.benefit h3 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* features style*/
+.features div{
+	margin: 100px 10px 0 10px;
+	float: right;
+	_display: inline;
+	width: 420px;
+}
+.features li {
+	list-style: disc inside;
+}
+
+/* alert_Reports style*/
+.alert_Reports {
+	position: relative;
+	height: 436px;
+}
+.alert_Reports div {
+	width: 460px;
+	margin-top: 120px;
+	float: left;
+}
+.ar_big, .ar_small{
+	position: absolute;
+	bottom: 0px;
+}
+.ar_big {
+	right: 0;
+}
+.ar_small {
+	right: 240px;
+}
+
+/* beautiful_Graphs style*/
+.beautiful_Graphs{
+	position: relative;
+}
+.loupe {
+	position: absolute;
+	left: 190px;
+}
+
+/* screenshots style*/
+.screenshots  {
+	display: inline-block;
+}
+.sum_slider{
+	position: relative;
+}
+.slider{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.slider li {
+	display: none;
+	width: 940px;
+	height: 472px;
+	background: url(../images/slider/hardware.jpg) no-repeat bottom center;
+}
+.slider  img {
+	float: left;
+    _display: inline;
+    margin-top: 84px;
+    margin-left: 43px;
+    margin-right: 42px;
+}
+.pager {
+	margin-bottom: 40px;
+}
+.prev , .next {
+	position: absolute;
+	top: 200px;
+    width: 30px;
+    height: 73px;
+    cursor: pointer;
+}
+.prev {
+	left: -70px;
+}
+.next {
+	right: -70px;
+}
+.track {
+	padding-bottom: 40px;
+}
+
+/* Subscribe style */
+.text {
+	display: inline-block;
+    outline: none;
+    -webkit-appearance: none;
+    width: 340px;
+    padding: 15px 0px 15px 15px;
+    background: white;
+    border: 1px solid #d4d4d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #3498d9;
+	margin-bottom: 20px;
+}
+.submit {
+	border: none;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	background: transparent url(../images/icons/more.png) no-repeat top right;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+	text-decoration: none;
+	-webkit-appearance: none;
+	font-size: 22px;
+	font-weight: 300;
+	color: #3498d9;
+	margin-left: 10px;
+	padding-right: 40px;
+	-moz-transition: color .2s;
+	-o-transition: color .2s;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+}
+
+.subscribe ul {
+	width: 150px;
+	margin: 0 auto;
+	border-top: 1px solid #ececec;
+}
+.subscribe li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 60px;
+}
+
+/* footer style */
+footer {
+	width: 100%;
+    background: #f9f9f9;
+    border-top: 1px solid #ececec;
+    padding: 40px 0px 20px;
+}
+
+footer li {
+	padding: 10px 10px;
+}
+
+.top {
+	margin-left: 10px;
+}
+
+.copyright {
+	font-size: 12px;
+    font-weight: 400;
+    color: #aeaeae;
+}
